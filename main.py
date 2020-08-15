@@ -5,10 +5,7 @@ import os
 
 class MEA(): 
     def __init__(self): 
-        self.length = 10
-        self.sequence = 0
-        self.results = {}
-        self.query_pfm = 0
+        pass
         
     def getPfms(self): 
         self.motif_names =  os.listdir("Motifs")
