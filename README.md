@@ -28,4 +28,7 @@ So the results will be near to zero.
 
 
 ## Input motifs:
-I used the TF2DNA database of human TFs as input for the algorithm. 
+I used the TF2DNA database of human TFs as input for the algorithm, please find the dataset on their website. 
+
+## Further improvment: 
+Will implement a background generator version for statistical testing. 
