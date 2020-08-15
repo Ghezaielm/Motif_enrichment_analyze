@@ -31,7 +31,7 @@ class MEA():
         trace_perfect = np.trace(np.dot(np.array(self.pfm),np.array(perfect_target).T))
         trace_worst = np.trace(np.dot(np.array(self.pfm),np.array(worst_target).T))
         trace_query  = np.trace(np.dot(np.array(self.pfm),np.array(self.query_pfm).T))
-        sim = 1-((trace_perfect-trace_query-trace_worst)/(trace_perfect))
+        sim = 1-((trace_query-trace_perfect-trace_worst)**2/(trace_perfect))
         return sim
         
     def getQueryPfm(self,target): 
@@ -55,5 +55,5 @@ class MEA():
               
 o = MEA()
 o.getPfms()
-target = ["GAGCCCCGAGCCCCGAGCCCC"]
+target = ["ACGGCCAGCAACGGCCAGCAACGGCCAGCA"]
 o.getQueryPfm(target)
