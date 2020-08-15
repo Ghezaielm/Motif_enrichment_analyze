@@ -57,4 +57,3 @@ o = MEA()
 o.getPfms()
 target = ["GAGCCCCGAGCCCCGAGCCCC"]
 o.getQueryPfm(target)
-#o.generatePfm()
